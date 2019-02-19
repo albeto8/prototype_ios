@@ -19,6 +19,7 @@
 		ACA058AD221C89250043231C /* MainVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058AC221C89250043231C /* MainVC-Extension+TableViewDataSource.swift */; };
 		ACA058AF221C89360043231C /* MainVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058AE221C89360043231C /* MainVC-Extension+TableViewDelegate.swift */; };
 		ACA058B1221C8A5B0043231C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058B0221C8A5B0043231C /* DetailViewController.swift */; };
+		ACA058B3221C9A720043231C /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058B2221C9A720043231C /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		ACA058AC221C89250043231C /* MainVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		ACA058AE221C89360043231C /* MainVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		ACA058B0221C8A5B0043231C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ACA058B2221C9A720043231C /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		ACA058A4221C7D6B0043231C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ACA058B2221C9A720043231C /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA058AF221C89360043231C /* MainVC-Extension+TableViewDelegate.swift in Sources */,
+				ACA058B3221C9A720043231C /* MessageCell.swift in Sources */,
 				ACA058A9221C83FF0043231C /* MessageDataModel.swift in Sources */,
 				ACA058AD221C89250043231C /* MainVC-Extension+TableViewDataSource.swift in Sources */,
 				ACA05879221C7CEE0043231C /* MainViewController.swift in Sources */,

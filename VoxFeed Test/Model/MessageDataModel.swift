@@ -57,5 +57,5 @@ let user = User(userName: "GeekZone", profileImage: "https://assets.voxfeed.com/
 
 let message1 = MessageDataModel(id: "1", date: "2016-09-01T06:00:00.000Z", socialNetwork: "Facebook", user: user, campaign: campaign, Brand: brand, post: post, stats: stats, earnings: 120)
 
-let message2 = MessageDataModel(id: "1", date: "2016-09-01T06:00:00.000Z", socialNetwork: "Facebook", user: user, campaign: campaign, Brand: brand, post: post, stats: stats, earnings: 120)
+let message2 = MessageDataModel(id: "2", date: "2019-09-01T06:00:00.000Z", socialNetwork: "Instagram", user: user, campaign: campaign, Brand: brand, post: post, stats: stats, earnings: 120)
 

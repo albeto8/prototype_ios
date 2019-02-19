@@ -22,14 +22,17 @@ extension MainViewController : UITableViewDataSource {
         return messageViewModel.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-        
-        //tableViewCell?.imageView?.image = UIImage(named: messierViewModel[indexPath.row].thumbnail)
-        tableViewCell?.textLabel?.text = messageViewModel[indexPath.row].id
-        tableViewCell?.detailTextLabel?.text = messageViewModel[indexPath.row].socialNetwork
-        return tableViewCell!
+        if let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MessageCell {
+            //tableViewCell?.imageView?.image = UIImage(named: messierViewModel[indexPath.row].thumbnail)
+            tableViewCell.configureCell(messageViewModel: messageViewModel[indexPath.row])
+            return tableViewCell
+        }
+        return MessageCell()
     }
     
 }

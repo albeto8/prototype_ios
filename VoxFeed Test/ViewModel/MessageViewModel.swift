@@ -33,6 +33,18 @@ class MessageViewModel {
         return "socialNetwork: " + messageDataModel.socialNetwork
     }
     
+    public var userName: String {
+        return messageDataModel.user.userName
+    }
+    
+    public var postText: String {
+        return messageDataModel.post.text
+    }
+    
+    public var dateFormatted: String {
+        return messageDataModel.date
+    }
+    
     func download(completionHanlder: @escaping ImageDownloadCompletionClosure)
     {
         
