@@ -1,0 +1,6 @@
+framework module Pods_VoxFeed_TestTests {
+  umbrella header "Pods-VoxFeed TestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

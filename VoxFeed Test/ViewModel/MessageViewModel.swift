@@ -11,9 +11,7 @@ import UIKit
 
 public typealias ImageDownloadCompletionClosure = (_ imageData: NSData ) -> Void
 
-var messageViewModel: [MessageViewModel] =
-    [MessageViewModel(messageDataModel: message1),
-     MessageViewModel(messageDataModel: message2)]
+//var messageViewModel: [MessageViewModel] = [MessageViewModel(messageDataModel: message1), MessageViewModel(messageDataModel: message2)]
 
 class MessageViewModel {
     

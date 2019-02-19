@@ -16,6 +16,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        Service.shared.fetchCourses { (messages) in
+            print(messages)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

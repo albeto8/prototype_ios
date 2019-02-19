@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AAF9A664F736CDF208409DE /* Pods_VoxFeed_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813C502BB90BC8C150477809 /* Pods_VoxFeed_TestUITests.framework */; };
+		7716AA9D0A9446B983103114 /* Pods_VoxFeed_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31572FBFE0CEAE819C5124 /* Pods_VoxFeed_Test.framework */; };
+		81D9B1746201D990CA058B7E /* Pods_VoxFeed_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F579B15121EBFF7B25BFEBA /* Pods_VoxFeed_TestTests.framework */; };
 		ACA05877221C7CEE0043231C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05876221C7CEE0043231C /* AppDelegate.swift */; };
 		ACA05879221C7CEE0043231C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05878221C7CEE0043231C /* MainViewController.swift */; };
 		ACA0587C221C7CEE0043231C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA0587A221C7CEE0043231C /* Main.storyboard */; };
@@ -20,6 +23,7 @@
 		ACA058AF221C89360043231C /* MainVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058AE221C89360043231C /* MainVC-Extension+TableViewDelegate.swift */; };
 		ACA058B1221C8A5B0043231C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058B0221C8A5B0043231C /* DetailViewController.swift */; };
 		ACA058B3221C9A720043231C /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058B2221C9A720043231C /* MessageCell.swift */; };
+		ACA058B6221CC31E0043231C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058B5221CC31E0043231C /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1088AC13C299CC46C5774C64 /* Pods-VoxFeed Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test.debug.xcconfig"; sourceTree = "<group>"; };
+		5F24F7F9DCAD9F6EB20B98DE /* Pods-VoxFeed Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test.release.xcconfig"; sourceTree = "<group>"; };
+		6F579B15121EBFF7B25BFEBA /* Pods_VoxFeed_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoxFeed_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		813C502BB90BC8C150477809 /* Pods_VoxFeed_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoxFeed_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA21FA5BA7EEF23C0261BB0 /* Pods-VoxFeed TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoxFeed TestTests/Pods-VoxFeed TestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACA05873221C7CEE0043231C /* VoxFeed Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VoxFeed Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA05876221C7CEE0043231C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACA05878221C7CEE0043231C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +68,11 @@
 		ACA058AE221C89360043231C /* MainVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		ACA058B0221C8A5B0043231C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ACA058B2221C9A720043231C /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		ACA058B5221CC31E0043231C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		BAB03A24915A5D59C335F42F /* Pods-VoxFeed TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed TestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoxFeed TestUITests/Pods-VoxFeed TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE31572FBFE0CEAE819C5124 /* Pods_VoxFeed_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoxFeed_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD1AA281F125FC4E2291418 /* Pods-VoxFeed TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed TestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoxFeed TestTests/Pods-VoxFeed TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE98781849F24E4CDB0A8DE9 /* Pods-VoxFeed TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoxFeed TestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoxFeed TestUITests/Pods-VoxFeed TestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7716AA9D0A9446B983103114 /* Pods_VoxFeed_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D9B1746201D990CA058B7E /* Pods_VoxFeed_TestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AAF9A664F736CDF208409DE /* Pods_VoxFeed_TestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +110,8 @@
 				ACA0588A221C7CF00043231C /* VoxFeed TestTests */,
 				ACA05895221C7CF00043231C /* VoxFeed TestUITests */,
 				ACA05874221C7CEE0043231C /* Products */,
+				F9FAD01D2F36054683E09AA4 /* Pods */,
+				B9EDA738920C0F2EDD2736C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +132,7 @@
 				ACA058A4221C7D6B0043231C /* View */,
 				ACA058A7221C83A50043231C /* ViewModel */,
 				ACA058A5221C7D770043231C /* Controller */,
+				ACA058B4221CC1F70043231C /* Service */,
 				ACA05876221C7CEE0043231C /* AppDelegate.swift */,
 				ACA0587A221C7CEE0043231C /* Main.storyboard */,
 				ACA0587D221C7CEF0043231C /* Assets.xcassets */,
@@ -175,6 +195,37 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		ACA058B4221CC1F70043231C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ACA058B5221CC31E0043231C /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B9EDA738920C0F2EDD2736C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE31572FBFE0CEAE819C5124 /* Pods_VoxFeed_Test.framework */,
+				6F579B15121EBFF7B25BFEBA /* Pods_VoxFeed_TestTests.framework */,
+				813C502BB90BC8C150477809 /* Pods_VoxFeed_TestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9FAD01D2F36054683E09AA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1088AC13C299CC46C5774C64 /* Pods-VoxFeed Test.debug.xcconfig */,
+				5F24F7F9DCAD9F6EB20B98DE /* Pods-VoxFeed Test.release.xcconfig */,
+				8DA21FA5BA7EEF23C0261BB0 /* Pods-VoxFeed TestTests.debug.xcconfig */,
+				BFD1AA281F125FC4E2291418 /* Pods-VoxFeed TestTests.release.xcconfig */,
+				BAB03A24915A5D59C335F42F /* Pods-VoxFeed TestUITests.debug.xcconfig */,
+				DE98781849F24E4CDB0A8DE9 /* Pods-VoxFeed TestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA0589B221C7CF00043231C /* Build configuration list for PBXNativeTarget "VoxFeed Test" */;
 			buildPhases = (
+				D7BCF64EA397C4729D1F8532 /* [CP] Check Pods Manifest.lock */,
 				ACA0586F221C7CEE0043231C /* Sources */,
 				ACA05870221C7CEE0043231C /* Frameworks */,
 				ACA05871221C7CEE0043231C /* Resources */,
+				CB092305B4C559B9B0471DF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA0589E221C7CF00043231C /* Build configuration list for PBXNativeTarget "VoxFeed TestTests" */;
 			buildPhases = (
+				5685A411358555AADFB3B73F /* [CP] Check Pods Manifest.lock */,
 				ACA05883221C7CF00043231C /* Sources */,
 				ACA05884221C7CF00043231C /* Frameworks */,
 				ACA05885221C7CF00043231C /* Resources */,
@@ -217,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA058A1221C7CF00043231C /* Build configuration list for PBXNativeTarget "VoxFeed TestUITests" */;
 			buildPhases = (
+				433CDF0C480E896BAC93B98E /* [CP] Check Pods Manifest.lock */,
 				ACA0588E221C7CF00043231C /* Sources */,
 				ACA0588F221C7CF00043231C /* Frameworks */,
 				ACA05890221C7CF00043231C /* Resources */,
@@ -301,6 +356,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		433CDF0C480E896BAC93B98E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoxFeed TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5685A411358555AADFB3B73F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoxFeed TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB092305B4C559B9B0471DF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoxFeed Test/Pods-VoxFeed Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7BCF64EA397C4729D1F8532 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoxFeed Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACA0586F221C7CEE0043231C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -311,6 +441,7 @@
 				ACA058A9221C83FF0043231C /* MessageDataModel.swift in Sources */,
 				ACA058AD221C89250043231C /* MainVC-Extension+TableViewDataSource.swift in Sources */,
 				ACA05879221C7CEE0043231C /* MainViewController.swift in Sources */,
+				ACA058B6221CC31E0043231C /* Service.swift in Sources */,
 				ACA058AB221C84D30043231C /* MessageViewModel.swift in Sources */,
 				ACA05877221C7CEE0043231C /* AppDelegate.swift in Sources */,
 				ACA058B1221C8A5B0043231C /* DetailViewController.swift in Sources */,
@@ -486,6 +617,7 @@
 		};
 		ACA0589C221C7CF00043231C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1088AC13C299CC46C5774C64 /* Pods-VoxFeed Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +637,7 @@
 		};
 		ACA0589D221C7CF00043231C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F24F7F9DCAD9F6EB20B98DE /* Pods-VoxFeed Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +657,7 @@
 		};
 		ACA0589F221C7CF00043231C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA21FA5BA7EEF23C0261BB0 /* Pods-VoxFeed TestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +679,7 @@
 		};
 		ACA058A0221C7CF00043231C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD1AA281F125FC4E2291418 /* Pods-VoxFeed TestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -566,6 +701,7 @@
 		};
 		ACA058A2221C7CF00043231C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAB03A24915A5D59C335F42F /* Pods-VoxFeed TestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +722,7 @@
 		};
 		ACA058A3221C7CF00043231C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE98781849F24E4CDB0A8DE9 /* Pods-VoxFeed TestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -18,6 +18,11 @@ struct MessageDataModel {
     let post: Post
     let stats: Stats
     let earnings: Int
+    
+    init(messageItem: [String : Any]) {
+        self.id = messageItem["id"] as? String ?? ""
+        self.socialNetwork = messageItem["socialNetwork"] as? String ?? ""
+    }
 }
 
 struct User {
@@ -49,6 +54,7 @@ struct Stats {
     let audience: Int
 }
 
+/*
 let stats = Stats(clicks: 20, shares: 10, likes: 11, comments: 34, audience: 15)
 let post = Post(text: "#DaredevilReturns con la nueva temporada en primavera, por si no saben que hacer el próximo fin. #NetflixLoTiene #MarvelSeries", image: "https://assets.voxfeed.com/apps-development-test/post-image1.jpg", link: "https://www.facebook.com/VoxFeed/posts/753620444739473")
 let brand = Brand(name: "Netflix", logo: "https://assets.voxfeed.com/apps-development-test/campaign-brand1.png")
@@ -58,4 +64,4 @@ let user = User(userName: "GeekZone", profileImage: "https://assets.voxfeed.com/
 let message1 = MessageDataModel(id: "1", date: "2016-09-01T06:00:00.000Z", socialNetwork: "Facebook", user: user, campaign: campaign, Brand: brand, post: post, stats: stats, earnings: 120)
 
 let message2 = MessageDataModel(id: "2", date: "2019-09-01T06:00:00.000Z", socialNetwork: "Instagram", user: user, campaign: campaign, Brand: brand, post: post, stats: stats, earnings: 120)
-
+*/
