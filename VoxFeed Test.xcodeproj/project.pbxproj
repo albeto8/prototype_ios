@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		ACA05877221C7CEE0043231C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05876221C7CEE0043231C /* AppDelegate.swift */; };
-		ACA05879221C7CEE0043231C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05878221C7CEE0043231C /* ViewController.swift */; };
+		ACA05879221C7CEE0043231C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05878221C7CEE0043231C /* MainViewController.swift */; };
 		ACA0587C221C7CEE0043231C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA0587A221C7CEE0043231C /* Main.storyboard */; };
 		ACA0587E221C7CEF0043231C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA0587D221C7CEF0043231C /* Assets.xcassets */; };
 		ACA05881221C7CEF0043231C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA0587F221C7CEF0043231C /* LaunchScreen.storyboard */; };
 		ACA0588C221C7CF00043231C /* VoxFeed_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA0588B221C7CF00043231C /* VoxFeed_TestTests.swift */; };
 		ACA05897221C7CF00043231C /* VoxFeed_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05896221C7CF00043231C /* VoxFeed_TestUITests.swift */; };
+		ACA058A9221C83FF0043231C /* MessageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058A8221C83FF0043231C /* MessageDataModel.swift */; };
+		ACA058AB221C84D30043231C /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058AA221C84D30043231C /* MessageViewModel.swift */; };
+		ACA058AD221C89250043231C /* MainVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058AC221C89250043231C /* MainVC-Extension+TableViewDataSource.swift */; };
+		ACA058AF221C89360043231C /* MainVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058AE221C89360043231C /* MainVC-Extension+TableViewDelegate.swift */; };
+		ACA058B1221C8A5B0043231C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA058B0221C8A5B0043231C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		ACA05873221C7CEE0043231C /* VoxFeed Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VoxFeed Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA05876221C7CEE0043231C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACA05878221C7CEE0043231C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACA05878221C7CEE0043231C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACA0587B221C7CEE0043231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACA0587D221C7CEF0043231C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA05880221C7CEF0043231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		ACA05892221C7CF00043231C /* VoxFeed TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VoxFeed TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA05896221C7CF00043231C /* VoxFeed_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxFeed_TestUITests.swift; sourceTree = "<group>"; };
 		ACA05898221C7CF00043231C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA058A8221C83FF0043231C /* MessageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataModel.swift; sourceTree = "<group>"; };
+		ACA058AA221C84D30043231C /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		ACA058AC221C89250043231C /* MainVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		ACA058AE221C89360043231C /* MainVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		ACA058B0221C8A5B0043231C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,11 @@
 		ACA05875221C7CEE0043231C /* VoxFeed Test */ = {
 			isa = PBXGroup;
 			children = (
+				ACA058A6221C7D7E0043231C /* Model */,
+				ACA058A4221C7D6B0043231C /* View */,
+				ACA058A7221C83A50043231C /* ViewModel */,
+				ACA058A5221C7D770043231C /* Controller */,
 				ACA05876221C7CEE0043231C /* AppDelegate.swift */,
-				ACA05878221C7CEE0043231C /* ViewController.swift */,
 				ACA0587A221C7CEE0043231C /* Main.storyboard */,
 				ACA0587D221C7CEF0043231C /* Assets.xcassets */,
 				ACA0587F221C7CEF0043231C /* LaunchScreen.storyboard */,
@@ -123,6 +136,40 @@
 				ACA05898221C7CF00043231C /* Info.plist */,
 			);
 			path = "VoxFeed TestUITests";
+			sourceTree = "<group>";
+		};
+		ACA058A4221C7D6B0043231C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACA058A5221C7D770043231C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACA05878221C7CEE0043231C /* MainViewController.swift */,
+				ACA058AC221C89250043231C /* MainVC-Extension+TableViewDataSource.swift */,
+				ACA058AE221C89360043231C /* MainVC-Extension+TableViewDelegate.swift */,
+				ACA058B0221C8A5B0043231C /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACA058A6221C7D7E0043231C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACA058A8221C83FF0043231C /* MessageDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACA058A7221C83A50043231C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACA058AA221C84D30043231C /* MessageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACA05879221C7CEE0043231C /* ViewController.swift in Sources */,
+				ACA058AF221C89360043231C /* MainVC-Extension+TableViewDelegate.swift in Sources */,
+				ACA058A9221C83FF0043231C /* MessageDataModel.swift in Sources */,
+				ACA058AD221C89250043231C /* MainVC-Extension+TableViewDataSource.swift in Sources */,
+				ACA05879221C7CEE0043231C /* MainViewController.swift in Sources */,
+				ACA058AB221C84D30043231C /* MessageViewModel.swift in Sources */,
 				ACA05877221C7CEE0043231C /* AppDelegate.swift in Sources */,
+				ACA058B1221C8A5B0043231C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4ZUPHQCZR;
 				INFOPLIST_FILE = "VoxFeed Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4ZUPHQCZR;
 				INFOPLIST_FILE = "VoxFeed Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
