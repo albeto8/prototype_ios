@@ -22,7 +22,7 @@ class MessageViewModel {
     
     init(messageDataModel: MessageDataModel) {
         self.messageDataModel = messageDataModel
-        self.imageURL = URL(string: messageDataModel.imageLink)!
+        self.imageURL = URL(string: messageDataModel.post.image)!
     }
     
     public var id: String {
