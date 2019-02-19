@@ -18,11 +18,9 @@ var messageViewModel: [MessageViewModel] =
 class MessageViewModel {
     
     private let messageDataModel: MessageDataModel
-    private var imageURL: URL
     
     init(messageDataModel: MessageDataModel) {
         self.messageDataModel = messageDataModel
-        self.imageURL = URL(string: messageDataModel.post.image)!
     }
     
     public var id: String {
@@ -41,6 +39,14 @@ class MessageViewModel {
         return messageDataModel.post.text
     }
     
+    public var postImageURL: URL {
+        return URL(string: messageDataModel.post.image)!
+    }
+    
+    public var profileImageURL: URL {
+        return URL(string: messageDataModel.user.profileImage)!
+    }
+    
     public var dateFormatted: String {
         let dateString = messageDataModel.date
         let dateFormatter = DateFormatter()
@@ -54,7 +60,7 @@ class MessageViewModel {
         return ""
     }
     
-    func download(completionHanlder: @escaping ImageDownloadCompletionClosure)
+    func download(completionHanlder: @escaping ImageDownloadCompletionClosure, imageURL: URL)
     {
         
         let sessionConfig = URLSessionConfiguration.default

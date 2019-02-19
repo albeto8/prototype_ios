@@ -22,10 +22,18 @@ extension MainViewController : UITableViewDataSource {
         return messageViewModel.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 214
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MessageCell {
-            //tableViewCell?.imageView?.image = UIImage(named: messierViewModel[indexPath.row].thumbnail)
             tableViewCell.configureCell(messageViewModel: messageViewModel[indexPath.row])
+            messageViewModel[indexPath.row].download(completionHanlder: { (imageData) in
+                DispatchQueue.main.async {
+                    tableViewCell.postImage.image = UIImage(data: imageData as Data)
+                }
+            }, imageURL: messageViewModel[indexPath.row].postImageURL)
             return tableViewCell
         }
         return MessageCell()

@@ -44,7 +44,7 @@ class DetailViewController: UIViewController {
         titleLabel.text = messageViewModel?.id
         
         // Start image downloading in background.
-        messageViewModel?.download(completionHanlder: imageCompletionClosure)
+        //messageViewModel?.download(completionHanlder: imageCompletionClosure)
     }
 
 }
