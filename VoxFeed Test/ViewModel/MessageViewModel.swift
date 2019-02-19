@@ -30,7 +30,7 @@ class MessageViewModel {
     }
     
     public var socialNetwork: String {
-        return "socialNetwork: " + messageDataModel.socialNetwork
+        return messageDataModel.socialNetwork
     }
     
     public var userName: String {
@@ -42,7 +42,16 @@ class MessageViewModel {
     }
     
     public var dateFormatted: String {
-        return messageDataModel.date
+        let dateString = messageDataModel.date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        dateFormatter.locale = Locale.init(identifier: "es_MX")
+        
+        if let dateObj = dateFormatter.date(from: dateString) {
+            dateFormatter.dateFormat = "dd MMMM"
+            return dateFormatter.string(from: dateObj).capitalized
+        }
+        return ""
     }
     
     func download(completionHanlder: @escaping ImageDownloadCompletionClosure)

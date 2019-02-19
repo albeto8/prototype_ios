@@ -22,10 +22,6 @@ extension MainViewController : UITableViewDataSource {
         return messageViewModel.count
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MessageCell {
             //tableViewCell?.imageView?.image = UIImage(named: messierViewModel[indexPath.row].thumbnail)
