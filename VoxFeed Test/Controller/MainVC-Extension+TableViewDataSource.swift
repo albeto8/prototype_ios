@@ -19,7 +19,7 @@ extension MainViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return messageViewModel.count
+        return messages.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -28,12 +28,12 @@ extension MainViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? MessageCell {
-            tableViewCell.configureCell(messageViewModel: messageViewModel[indexPath.row])
-            messageViewModel[indexPath.row].download(completionHanlder: { (imageData) in
+            tableViewCell.configureCell(messageViewModel: messages[indexPath.row])
+            messages[indexPath.row].download(completionHanlder: { (imageData) in
                 DispatchQueue.main.async {
                     tableViewCell.postImage.image = UIImage(data: imageData as Data)
                 }
-            }, imageURL: messageViewModel[indexPath.row].postImageURL)
+            }, imageURL: messages[indexPath.row].postImageURL)
             return tableViewCell
         }
         return MessageCell()

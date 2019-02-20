@@ -11,13 +11,20 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var messages = [MessageViewModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        Service.shared.fetchCourses { (messages) in
-            print(messages)
+        Service.shared.fetchCourses { (data) in
+            do {
+                let decodedData = try JSONDecoder().decode([MessageDataModel].self, from: data!)
+                self.messages = decodedData.map({return MessageViewModel(messageDataModel: $0)})
+                self.tableView.reloadData()
+            } catch {
+                print(error)
+            }
         }
     }
     
@@ -26,7 +33,7 @@ class MainViewController: UIViewController {
             if let destinationViewController = segue.destination as? DetailViewController {
                 let indexPath = self.tableView.indexPathForSelectedRow!
                 let index = indexPath.row
-                destinationViewController.messageViewModel = messageViewModel[index]
+                destinationViewController.messageViewModel = messages[index]
             }
         }
     }

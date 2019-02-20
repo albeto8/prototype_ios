@@ -30,19 +30,19 @@ class MessageViewModel {
     }
     
     public var userName: String {
-        return messageDataModel.user.userName
+        return messageDataModel.user["userName"] ?? ""
     }
     
     public var postText: String {
-        return messageDataModel.post.text
+        return messageDataModel.post["text"] ?? ""
     }
     
     public var postImageURL: URL {
-        return URL(string: messageDataModel.post.image)!
+        return URL(string: messageDataModel.post["image"]!)!
     }
     
     public var profileImageURL: URL {
-        return URL(string: messageDataModel.user.profileImage)!
+        return URL(string: messageDataModel.user["profileImage"]!)!
     }
     
     public var dateFormatted: String {

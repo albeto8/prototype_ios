@@ -14,7 +14,7 @@ let urlString = "https://api.voxfeed.com/public/promoted_messages"
 class Service: NSObject {
     static let shared = Service()
     
-    func fetchCourses(completion: @escaping ([MessageDataModel]?) -> Void) {
+    func fetchCourses(completion: @escaping (Data?) -> Void) {
         guard let url = URL(string: urlString) else {
             completion(nil)
             return
@@ -26,18 +26,12 @@ class Service: NSObject {
                     return
                 }
             
-            guard let value = response.result.value as? [[String: Any]] else {
-                    print("Malformed data received from fetchCourses service")
-                    completion(nil)
-                    return
-                }
-            var messages = [MessageDataModel]()
-            for item in value {
-                let message = MessageDataModel(messageItem: item)
-                messages.append(message)
+            guard let data = response.data else {
+                print("Malformed data received from fetchCourses service")
+                completion(nil)
+                return
             }
-            print("Messages: \(String(describing: messages))")
-            completion(messages)
+            completion(data)
         }
     }
 }
